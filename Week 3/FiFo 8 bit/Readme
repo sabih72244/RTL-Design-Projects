@@ -1,0 +1,3 @@
+Theory: A First-In, First-Out (FIFO) memory queue used to buffer data bytes between different processing units. Operating on a single clock domain, it utilizes dual ring counters (Write Pointer and Read Pointer) to track memory locations inside a internal static register array. It includes real-time arithmetic counter flags to compute full and empty conditions, featuring hardware-level safety mechanisms that prevent data corruption from overflow (writing when full) or underflow (reading when empty).
+
+Hardware Elements: 16x8 Dual-port Register Array (RAM blocks), Address Pointers, and Counter/Status Flags.
