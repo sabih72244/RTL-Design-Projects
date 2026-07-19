@@ -1,0 +1,3 @@
+Theory: This hardware module interface decodes the serial keyboard protocol over a 2-wire bus (PS2_Clock and PS2_Data). It captures an 11-bit serial frame (Start, 8 Data bits, Odd Parity, Stop bit) on the falling edge of the keyboard clock and syncs it into a fast system clock domain. It features an integrated custom decoder Filter Block that scans the byte output; it isolates and displays the 16-bit scan codes for A (1C), B (32), and C (21) while automatically discarding and clearing (16'h0000) any other key pressed on the keyboard.
+
+Hardware Elements: Clock-domain synchronizer flip-flops, serial-to-parallel shift registers, parity check trees, and digital filters.
