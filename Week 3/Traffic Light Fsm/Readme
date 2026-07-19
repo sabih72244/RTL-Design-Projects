@@ -1,0 +1,3 @@
+Theory: This system models a classic four-way highway intersection managing a Main Road and a Side Road. Implemented as a glitch-free Moore State Machine (where outputs depend strictly on the state itself), it controls standard Red-Yellow-Green cycling. It features an integrated digital countdown timer circuit that ensures the Green light stays active longer than the transitional Yellow phase before swapping the right-of-way safely.
+
+Hardware Elements: State registers, comparator logic for timer limits, and output decoding logic to drive the 3-bit light buses.
